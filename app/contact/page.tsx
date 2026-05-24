@@ -3,41 +3,34 @@ export default function Contact() {
     <section className="section">
       ```jsx
 import Head from 'next/head';
-import Link from 'next/link';
 
-function ContactPage() {
+const ContactPage = () => {
   return (
     <>
       <Head>
-        <title>Contact Us - The Best 10 Private Schools</title>
-        <meta name="description" content="Get in touch with us at The Best 10 Private Schools in Austin, TX." />
+        <title>Contact Us - The Best 10 Private Schools near Austin, TX</title>
       </Head>
-
-      <main className="max-w-4xl mx-auto p-4 py-6 md:p-6 lg:p-8">
+      <main className="container max-w-4xl p-4 mx-auto">
         <h1 className="text-3xl font-bold mb-4">Contact Us</h1>
-        <p className="mb-4">We appreciate your interest in The Best 10 Private Schools. Please feel free to reach out to us with any questions or inquiries.</p>
-
-        <section className="bg-gray-100 p-4 rounded-md shadow-md mb-8">
-          <h2 className="text-2xl font-bold mb-2">Get in Touch</h2>
-          <p className="mb-4">Email: <Link href="mailto:info@best10privateschools.com" className="text-blue-600 hover:text-blue-800 transition-all duration-300">info@best10privateschools.com</Link></p>
-          <p>Phone: N/A</p>
-          <p>Address: N/A</p>
-        </section>
-
-        <section className="mb-8">
+        <p className="text-lg mb-4">We'd love to hear from you!</p>
+        <div className="flex flex-col md:flex-row mb-4">
+          <div className="w-full md:w-1/2 mb-4 md:mb-0">
+            <h2 className="text-2xl font-bold mb-2">Get in Touch</h2>
+            <p>Email: <a href="mailto:info@best10privateschools.com" className="text-blue-500 hover:text-blue-700">info@best10privateschools.com</a></p>
+          </div>
+          <div className="w-full md:w-1/2">
+            <h2 className="text-2xl font-bold mb-2">Location</h2>
+            <p>Austin, TX 78701</p>
+          </div>
+        </div>
+        <div className="mb-4">
           <h2 className="text-2xl font-bold mb-2">Leave a Message</h2>
-          <p>Fill out the form below to send us a message. We'll get back to you as soon as possible.</p>
-          {/* Add a form to this section, e.g. using a library like react-hook-form */}
-        </section>
-
-        <section className="mb-8">
-          <h2 className="text-2xl font-bold mb-2">Office Hours</h2>
-          <p>We are available Monday through Friday from 8am to 5pm.</p>
-        </section>
+          <p>Please note that we do not have a physical office location and kindly request that you reach out to us via email or phone.</p>
+        </div>
       </main>
     </>
   );
-}
+};
 
 export default ContactPage;
 ```

@@ -3,58 +3,96 @@ export default function Home() {
     <>
       <section className="hero">
         <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>The Best 10 Private Schools near Austin, TX 78701</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Discover the best private schools in Austin, TX 78701. Learn about our academic programs, extracurricular activities, and community involvement.">
-  <meta name="keywords" content="private schools in Austin, TX, best schools near 78701, academic programs, extracurricular activities">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Best 10 Private Schools near Austin, TX 78701</title>
+    <style>
+        /* Add some basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+        }
+        
+        .hero {
+            background-image: linear-gradient(to bottom, #3498db, #235784);
+            color: #fff;
+            padding: 100px 20px;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+        
+        .feature {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+        }
+        
+        .feature h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .feature ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .feature li {
+            margin-bottom: 10px;
+        }
+        
+        .feature li::before {
+            content: "\2022";
+            font-weight: bold;
+            margin-right: 5px;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Academics</a></li>
-        <li><a href="#">Extracurriculars</a></li>
-        <li><a href="#">Admissions</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section class="hero">
-      <h1>Empowering Minds, One Student at a Time</h1>
-      <p>We are a community-driven private school dedicated to providing a world-class education to students in grades K-12. Our experienced faculty, state-of-the-art facilities, and rigorous curriculum prepare students for success in college and beyond.</p>
-      <button>Learn More</button>
-    </section>
-    <section class="feature">
-      <h2>Our Highlights</h2>
-      <ul>
-        <li>
-          <h3>Small Class Sizes</h3>
-          <p>With a student-to-teacher ratio of 10:1, our students receive personalized attention and support to help them achieve their full potential.</p>
-        </li>
-        <li>
-          <h3>State-of-the-Art Facilities</h3>
-          <p>Our campus features modern classrooms, a state-of-the-art science lab, a library, and a fitness center, providing students with a safe and inspiring learning environment.</p>
-        </li>
-        <li>
-          <h3>Extracurricular Opportunities</h3>
-          <p>We offer a range of extracurricular activities, including sports, music, art, and debate, to help students develop new skills and interests outside of the classroom.</p>
-        </li>
-        <li>
-          <h3>Community Involvement</h3>
-          <p>We are committed to giving back to our community through volunteer work, charity events, and partnerships with local organizations.</p>
-        </li>
-      </ul>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; 2023 The Best 10 Private Schools near Austin, TX 78701. All rights reserved.</p>
-  </footer>
+    <header class="hero">
+        <h1>The Best 10 Private Schools near Austin, TX 78701</h1>
+        <p>Discover the top private schools in Austin, TX 78701, offering exceptional education, extracurricular activities, and campus life.</p>
+    </header>
+    <main>
+        <section>
+            <h2>Feature Highlights</h2>
+            <ul>
+                <li><i>Small Class Sizes</i> - Our schools have an average class size of 12 students, ensuring personalized attention and instruction.</li>
+                <li><i>World-Class Facilities</i> - Our campuses are equipped with state-of-the-art technology, sports facilities, and arts centers.</li>
+                <li><i>Experienced Faculty</i> - Our teachers are highly qualified, dedicated professionals with a passion for teaching and mentoring.</li>
+                <li><i>Diverse Extracurricular Activities</i> - Our schools offer a wide range of clubs, sports teams, and music programs to foster creativity and teamwork.</li>
+                <li><i>College Counseling</i> - Our dedicated college counseling team helps students navigate the college application process and secure admission to top universities.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Our Schools</h2>
+            <ul>
+                <li>Anderson Private School</li>
+                <li>Bluebonnet Private School</li>
+                <li>Cedar Park Private School</li>
+                <li>Harmony Private School</li>
+                <li>Legacy Private School</li>
+                <li>Liberty Private School</li>
+                <li>North Austin Private School</li>
+                <li>Oak Hill Private School</li>
+                <li>St. Andrew Private School</li>
+                <li>Westlake Private School</li>
+            </ul>
+        </section>
+    </main>
 </body>
 </html>
       </section>

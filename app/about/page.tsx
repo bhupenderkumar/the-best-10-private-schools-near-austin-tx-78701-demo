@@ -3,50 +3,67 @@ export default function About() {
     <section className="section">
       ```jsx
 import Head from 'next/head';
+import Link from 'next/link';
 
-const About = () => {
+function AboutPage() {
   return (
     <>
       <Head>
-        <title>About The Best 10 Private Schools</title>
+        <title>About Us | The Best 10 Private Schools</title>
+        <meta name="description" content="Learn about our mission, values, and history at The Best 10 Private Schools in Austin, TX." />
+        <meta name="keywords" content="private schools, austin, texas, best schools" />
       </Head>
-      <div className="container mx-auto p-4">
-        <h1 className="text-3xl font-bold mb-4">About The Best 10 Private Schools</h1>
-        <p>
-          At The Best 10 Private Schools, we are dedicated to providing a superior education to students in the Austin, TX area. Our team of experienced educators is committed to helping our students reach their full potential and achieve their academic goals.
-        </p>
-        <p>
-          We understand that every student learns differently, which is why we offer a range of programs and services to meet the unique needs of each child. From our rigorous academic curriculum to our extracurricular activities and sports programs, we strive to create a well-rounded educational experience that prepares our students for success in all areas of life.
-        </p>
-        <p>
-          Our school is proud to be part of the Austin community, and we are committed to giving back to the community that has given so much to us. We partner with local organizations and businesses to provide opportunities for our students to learn and grow outside of the classroom.
-        </p>
-        <p>
-          If you are interested in learning more about The Best 10 Private Schools or would like to schedule a tour of our campus, please don't hesitate to contact us. We look forward to hearing from you and welcoming you to our school community!
-        </p>
-      </div>
-      <style jsx>
-        {`
-          .container {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 20px;
-            background-color: #f7f7f7;
-            border: 1px solid #ddd;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-          }
-        `}
-      </style>
+      <header>
+        <nav>
+          <ul>
+            <li>
+              <Link href="/">
+                <a>Home</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/about">
+                <a>About Us</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/contact">
+                <a>Contact Us</a>
+              </Link>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section>
+          <h1>About Us</h1>
+          <p>Welcome to The Best 10 Private Schools, a community of dedicated educators and families committed to providing a world-class education to students in Austin, TX.</p>
+          <p>Our mission is to foster a love of learning, creativity, and critical thinking in a supportive and inclusive environment.</p>
+          <p>At The Best 10 Private Schools, we value academic excellence, character development, and community engagement.</p>
+        </section>
+        <section>
+          <h2>Our History</h2>
+          <p>We were founded in [Year] with the goal of providing a unique and personalized education to students in the Austin area.</p>
+          <p>Since our inception, we have grown to become one of the top private schools in the region, known for our academic rigor, innovative programs, and commitment to community service.</p>
+        </section>
+        <section>
+          <h2>Our Team</h2>
+          <p>Our faculty and staff are dedicated professionals who are passionate about teaching and learning.</p>
+          <p>With a range of backgrounds and expertise, our team is committed to providing a supportive and stimulating environment for our students to thrive.</p>
+        </section>
+      </main>
+      <footer>
+        <p>&copy; {new Date().getFullYear()} The Best 10 Private Schools. All rights reserved.</p>
+        <p>Contact us: <a href="mailto:info@best10privateschools.com">info@best10privateschools.com</a></p>
+      </footer>
     </>
   );
-};
+}
 
-export default About;
+export default AboutPage;
 ```
 
-This JSX code defines a Next.js page component called `About` that displays information about The Best 10 Private Schools. The component includes a heading, paragraphs of text, and a call to action to contact the school. The CSS styles are embedded in the component using the `style jsx` tag.
-
-Please note that you'll need to create a `pages/about.js` file in your Next.js project and paste this code into it for it to work.
+This JSX code represents a Next.js page component for the About page of The Best 10 Private Schools. It includes a header with a navigation menu, a main section with three sub-sections (About Us, Our History, and Our Team), and a footer with contact information. The code uses JSX to render dynamic content and follows best practices for Next.js page components.
     </section>
   );
 }

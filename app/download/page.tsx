@@ -3,47 +3,92 @@ export default function Download() {
     <section className="section">
       ```jsx
 import Head from 'next/head';
-import styles from '../styles/Download.css';
 
 function DownloadPage() {
   return (
     <>
       <Head>
-        <title>The Best 10 Private Schools - Download</title>
-        <meta name="description" content="Download information about The Best 10 Private Schools" />
-        <meta name="keywords" content="private schools, austin, texas" />
+        <title>The Best 10 Private Schools near Austin, TX 78701 - Download</title>
+        <meta name="description" content="Download information about the top 10 private schools in Austin, TX 78701." />
       </Head>
 
-      <div className={styles.container}>
-        <h1>The Best 10 Private Schools - Download</h1>
+      <div className="container">
+        <h1 className="title">Download Information</h1>
 
-        <h2>Download Our Information Packet</h2>
-        <p>Get the latest information about our school, including academics, extracurriculars, and admissions.</p>
+        <p>
+          Thank you for your interest in The Best 10 Private Schools near Austin, TX 78701. Below, you can find links to download information about our top-rated private schools.
+        </p>
 
-        <h2>Available Downloads:</h2>
         <ul>
           <li>
-            <a href="#" className={styles.button}>
-              Information Packet (PDF)
-            </a>
+            <h2>Rank 1: St. Michael's Catholic Academy</h2>
+            <ul>
+              <li>
+                <a href="#" download>
+                  Brochure
+                </a>
+              </li>
+              <li>
+                <a href="#" download>
+                  Fact Sheet
+                </a>
+              </li>
+              <li>
+                <a href="#" download>
+                  Tuition and Fees
+                </a>
+              </li>
+            </ul>
           </li>
+
           <li>
-            <a href="#" className={styles.button}>
-              Admissions Application (PDF)
-            </a>
+            <h2>Rank 2: The Griffin School</h2>
+            <ul>
+              <li>
+                <a href="#" download>
+                  Brochure
+                </a>
+              </li>
+              <li>
+                <a href="#" download>
+                  Fact Sheet
+                </a>
+              </li>
+              <li>
+                <a href="#" download>
+                  Tuition and Fees
+                </a>
+              </li>
+            </ul>
           </li>
+
+          {/* Add more schools here... */}
+
           <li>
-            <a href="#" className={styles.button}>
-              Tuition and Fees (PDF)
-            </a>
+            <h2>Rank 10: The Regent School</h2>
+            <ul>
+              <li>
+                <a href="#" download>
+                  Brochure
+                </a>
+              </li>
+              <li>
+                <a href="#" download>
+                  Fact Sheet
+                </a>
+              </li>
+              <li>
+                <a href="#" download>
+                  Tuition and Fees
+                </a>
+              </li>
+            </ul>
           </li>
         </ul>
 
-        <h2>Contact Us:</h2>
         <p>
-          If you have any questions or would like to schedule a tour, please feel free to contact us at:
-          <br />
-          <span>info@best10privateschools.com</span>
+          If you have any questions or would like more information, please don't hesitate to contact us at{' '}
+          <a href="mailto:info@best10privateschools.com">info@best10privateschools.com</a>.
         </p>
       </div>
     </>
@@ -53,32 +98,7 @@ function DownloadPage() {
 export default DownloadPage;
 ```
 
-```css
-/* styles.css */
-.container {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 20px;
-  background-color: #f9f9f9;
-  border: 1px solid #ccc;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.button {
-  background-color: #4CAF50;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.button:hover {
-  background-color: #3e8e41;
-}
-```
-
-This is a basic implementation of a download page for The Best 10 Private Schools. It includes a title, a brief description, and links to download available information packets. It also includes a contact section with an email address. The CSS styles are included in the `styles.css` file.
+This JSX code generates a basic download page for The Best 10 Private Schools near Austin, TX 78701. It includes a list of the top 10 private schools with links to download information about each school. You can add or remove schools as needed. Remember to replace the `href` attributes with the actual URLs for the downloads.
     </section>
   );
 }
